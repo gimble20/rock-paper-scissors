@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.gameWinnerDisplay,
+.roundWinner,
+.playerScoreClass,
+.computerScoreClass {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 33px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(225, 241, 255);
+    align-items: center;
+    margin: 25px 0 0;
+}
+
+.gameWinnerDisplay,
+.roundWinner,
+.allWeaponBtns,
+.resetBtnContainer {
+    margin-bottom: 35px;
+}
+
+.allWeaponBtns {
+    display: flex;
+    gap: 40px;
+}
+
+.weaponBtns {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(75, 75, 230);
+    border: none;
+}
+
+.weaponBtns:hover {
+    color: rgb(75, 75, 230);
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(75, 75, 230);
+}
+
+.resetBtn {
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 204, 21);
+    border: none;
+}
+
+.gameWinnerDisplay {
+    height: 47.744px;
+}
+
+.resetBtnContainer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scores {
+    display: flex;
+    gap: 45px;
+    margin-top: 85px;
+}
+
+.playerScoreDisplay,
+.computerScoreDisplay {
+    transition: all 0.25s linear;
+    padding: 5px;
+}
+
+.scoreUpdate {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
